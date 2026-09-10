@@ -11,6 +11,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* Mobil Taşma Düzeltmeleri */
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+@media screen and (max-width: 768px) {
+  header, .header-container, nav, .top-bar {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .grid, .features-grid, .stats-container, .row, .about-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .grid > div, .features-grid > div, .card, .stat-card, .about-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
         :root {
             --primary: #A62426;
             --primary-dark: #821B1D;
