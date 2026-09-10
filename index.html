@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGN Reklam Ajans | Tasarım - Baskı - Uygulama</title>
+    <meta name="description" content="Açık hava reklamları, tabela, matbaa baskı hizmetleri, promosyon ürünleri ve dijital çözümler. DGN Reklam Ajans ile markanızı öne çıkarın.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #A62426;
+            --primary-dark: #821B1D;
+            --accent: #E85A24;
+            --dark: #2B2C2E;
+            --gray: #6C757D;
+            --light-gray: #F8F9FA;
+            --border-color: #E9ECEF;
+            --white: #FFFFFF;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--dark);
+            background-color: #FAFAFA;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 8px 0;
+            font-size: 13px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-info span {
+            margin-right: 20px;
+        }
+
+        .top-info i {
+            color: var(--accent);
+            margin-right: 6px;
+        }
+
+        .top-social a {
+            color: var(--white);
+            margin-left: 15px;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .top-social a:hover {
+            color: var(--accent);
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-box img {
+            height: 48px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn-header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: var(--white);
+            padding: 10px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(166, 36, 38, 0.3);
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(166, 36, 38, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(43,44,46,0.95), rgba(20,20,20,0.92)), url('https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 0 120px 0;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero-subtitle {
+            display: inline-block;
+            background-color: rgba(232, 90, 36, 0.2);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #DDD;
+            margin-bottom: 35px;
+            max-width: 650px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1EBE5D;
+            transform: translateY(-2px);
+        }
+
+        /* Features Bar */
+        .features-bar {
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(166, 36, 38, 0.1);
+            color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .feature-text h4 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .feature-text p {
+            font-size: 13px;
+            color: var(--gray);
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 80px auto 50px auto;
+        }
+
+        .section-tag {
+            color: var(--accent);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .section-header h2 {
+            font-size: 34px;
+            font-weight: 800;
+            color: var(--dark);
+        }
+
+        .section-header p {
+            color: var(--gray);
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Categories & Services */
+        .category-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .category-header {
+            background: linear-gradient(90deg, var(--dark), #3A3B3E);
+            color: var(--white);
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .category-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .category-title i {
+            color: var(--accent);
+            font-size: 24px;
+        }
+
+        .category-title h3 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .service-box {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #EFEFEF;
+            transition: var(--transition);
+        }
+
+        .service-box:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary);
+            background: var(--white);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .service-box h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .service-box h4 i {
+            color: var(--primary);
+            font-size: 14px;
+        }
+
+        .service-box p {
+            font-size: 13.5px;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: var(--white);
+            padding: 80px 0;
+            margin-top: 60px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: var(--gray);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .badges {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .badge-item {
+            background: var(--light-gray);
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .badge-item h3 {
+            color: var(--primary);
+            font-size: 26px;
+            font-weight: 800;
+        }
+
+        .badge-item p {
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: #F2F4F7;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-info-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info-card h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(232, 90, 36, 0.1);
+            color: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h5 {
+            font-size: 14px;
+            color: var(--gray);
+            text-transform: uppercase;
+        }
+
+        .contact-details p, .contact-details a {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 60px 0 30px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-about img {
+            height: 40px;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-about p {
+            color: #AAA;
+            font-size: 14px;
+        }
+
+        .footer-links h4 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #AAA;
+            text-decoration: none;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 999;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-grid, .contact-grid, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-phone"></i> 0530 964 76 66</span>
+                <span><i class="fa-solid fa-envelope"></i> dogan.iscan@gmail.com</span>
+            </div>
+            <div class="top-social">
+                <a href="https://instagram.com/tabelan_burada" target="_blank"><i class="fa-brands fa-instagram"></i> @tabelan_burada</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo-box">
+                <img src="dgn_logo_yatay.png" alt="DGN Reklam Ajans Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+            <a href="https://wa.me/905309647666?text=Merhaba,%20reklam%20ve%20baskı%20hizmetleriniz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" class="btn-header">
+                <i class="fa-brands fa-whatsapp"></i> Hızlı Teklif Al
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="anasayfa">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Tasarım • Baskı • Uygulama</span>
+                <h1>Markanız İçin <span>Yaratıcı & Güçlü</span> Reklam Çözümleri</h1>
+                <p>Açık hava reklamcılığından matbaa baskılarına, promosyon ürünlerinden dijital kurumsal kimlik tasarımlarına kadar tüm tanıtım ihtiyaçlarınız tek çatı altında.</p>
+                <div class="hero-btns">
+                    <a href="https://wa.me/905309647666?text=Merhaba,%20reklam%20hizmetleriniz%20için%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp İle Ulaşın
+                    </a>
+                    <a href="#hizmetler" class="btn-primary">Hizmetlerimizi İnceleyin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <div class="container features-bar">
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                <div class="feature-text">
+                    <h4>Özel Tasarım</h4>
+                    <p>Markanıza özel özgün görsel çözümler</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-print"></i></div>
+                <div class="feature-text">
+                    <h4>Kaliteli Baskı</h4>
+                    <p>Yüksek çözünürlüklü dijital & matbaa baskı</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <div class="feature-text">
+                    <h4>Uzman Uygulama</h4>
+                    <p>Yerinde, titiz ve zamanında montaj</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <div class="feature-text">
+                    <h4>Hızlı Teslimat</h4>
+                    <p>Müşteri memnuniyeti odaklı teslimat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="container" id="hizmetler">
+        <div class="section-header">
+            <span class="section-tag">Neler Yapıyoruz?</span>
+            <h2>Hizmet Kategorilerimiz</h2>
+            <p>DGN Reklam Ajans olarak firmanızın ve şahsınızın tüm reklam, tanıtım ve kurumsal iletişim ihtiyaçlarına profesyonel çözümler sunuyoruz.</p>
+        </div>
+
+        <!-- 1. Açık Hava Reklamları -->
+        <div class="category-card">
+            <div class="category-header">
+                <div class="category-title">
+                    <i class="fa-solid fa-rectangle-ad"></i>
+                    <h3>Açık Hava Reklamları & Dış Mekan Baskı</h3>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Tabela Çözümleri</h4>
+                    <p>Işıklı, ışıksız, pleksi, kutu harf ve totemi kapsayan yüksek kaliteli dış mekan tabela uygulamaları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Afiş & Vinil Baskı</h4>
+                    <p>Dayanıklı malzeme üzerine yüksek çözünürlüklü germe vinil ve büyük boy afiş baskıları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Dijital Folyo Baskı</h4>
+                    <p>İç ve dış mekanlara uygun, canlı renkli ve uzun ömürlü yapışkanlı folyo baskı çözümleri.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Poster Baskı</h4>
+                    <p>İç mekan sergileme ve tanıtımlarınız için yüksek kaliteli fotoğraf kağıdı poster baskıları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Vitrin Cam Giydirme</h4>
+                    <p>One Way Vision (delikli folyo) ve dökme folyo ile mağaza vitrinlerinize şık kaplamalar.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Araç Kaplama</h4>
+                    <p>Ticari veya binek araçlarınız için kurumsal reklam giydirme ve lokal folyo uygulamaları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Reklam Panoları</h4>
+                    <p>Yönlendirme levhaları, şantiye panoları ve bina dış cephe bilgilendirme sistemleri.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Duba & Bayraklar</h4>
+                    <p>Duba çeşitleri, olta bayrak, plaj bayrağı ve yelken bayrak sistemleri üretimi.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Matbaa Baskı Hizmetleri -->
+        <div class="category-card">
+            <div class="category-header">
+                <div class="category-title">
+                    <i class="fa-solid fa-print"></i>
+                    <h3>Matbaa & Baskı Hizmetleri</h3>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Kartvizit Çeşitleri</h4>
+                    <p>Kabartma laklı, şeffaf, tual dokulu, sıvamalı ve standart premium kartvizit baskıları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Broşür & El İlanı</h4>
+                    <p>Kırımlı veya tek kırım, parlak/mat kuşe kağıda yüksek adetli kurumsal broşürler.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Katalog & Dergi</h4>
+                    <p>Ürünlerinizi ve hizmetlerinizi detaylı sergileyebileceğiniz tel dikiş veya amerikan cilt kataloglar.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Zarf & Antetli Kağıt</h4>
+                    <p>Kurumsal yazışmalarınız için logonuzla özel tasarlanmış diplomat zarf ve antetli kağıtlar.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Bloknot & Defter</h4>
+                    <p>Küpten spiralliye, firma logolu özel bloknot ve not defteri baskıları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Karton Çanta</h4>
+                    <p>İplerle güçlendirilmiş, laminasyonlu, şık tasarımlı kurumsal karton alışveriş çantaları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Ambalaj & Etiket</h4>
+                    <p>Ürün ambalajları, rulo etiket, damla etiket ve özel kesim kuşe etiket baskıları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Magnet Baskı</h4>
+                    <p>Buzdolabı magnetleri, özel kesimli promosyonel mıknatıslı reklam kartları.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Promosyon Ürünleri -->
+        <div class="category-card">
+            <div class="category-header">
+                <div class="category-title">
+                    <i class="fa-solid fa-gift"></i>
+                    <h3>Kurumsal Promosyon Ürünleri</h3>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Kalem & Çakmak</h4>
+                    <p>Logo baskılı plastik ve metal tükenmez kalemler, taşlı ve manyetolu promosyon çakmaklar.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Baskılı Kupa Bardak</h4>
+                    <p>Porselen ve seramik üzerine sublimation/serigrafi baskılı kurumsal hediye kupalar.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Tişört & Şapka Baskı</h4>
+                    <p>Personeliniz veya etkinlikleriniz için logo baskılı emprime / dijital baskılı tişört ve şapkalar.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Bez Çanta</h4>
+                    <p>Doğa dostu ham bez, tela ve koton kumaş üzerine özel grafik baskılı çanta modelleri.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Tarihsiz Defter & Ajanda</h4>
+                    <p>Gömme logo veya sıcak baskılı, deri ciltli premium kurumsal ajandalar.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Duvar Saati</h4>
+                    <p>Akar saniyeli, firmanızın logosunu ve iletişim bilgilerini taşıyan kadranlı duvar saatleri.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Plaket & Ödül</h4>
+                    <p>Ahşap kutulu, kristal cam veya kadife kutulu tebrik ve başarı plaketleri.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Personel Plastik Kart</h4>
+                    <p>Yaka kartları, üye kartları ve yakınlık okuyuculu plastik personel tanıtım kartları.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Dijital Çözümler & Grafik Tasarım -->
+        <div class="category-card">
+            <div class="category-header">
+                <div class="category-title">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Dijital Çözümler & Tasarım</h3>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Web Sitesi Yapımı</h4>
+                    <p>Mobil uyumlu, hızlı, modern arayüzlü ve SEO odaklı kurumsal web sitesi tasarımları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Sosyal Medya Tasarımları</h4>
+                    <p>Instagram, Facebook ve LinkedIn için dikkat çekici post, story ve reklam görsel tasarımları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Dijital QR Kartvizit</h4>
+                    <p>Kişisel bilgilerinizi, sosyal medyanızı ve rehbere kaydetme seçeneğini sunan QR kodlu dijital kartvizitler.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Logo & Amblem Tasarımı</h4>
+                    <p>Markanızın karakterini yansıtan, sektöre uygun, tamamen özgün ve vektörel logo çalışmaları.</p>
+                </div>
+                <div class="service-box">
+                    <h4><i class="fa-solid fa-check"></i> Kurumsal Kimlik Tasarımı</h4>
+                    <p>Renk paletinden yazı karakterlerine, matbu evraklardan tabela konseptine bütünsel kimlik rehberi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="hakkimizda">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1542744094-3a31216914fc?auto=format&fit=crop&w=800&q=80" alt="DGN Reklam Ajans Çalışma Alanı">
+            </div>
+            <div class="about-text">
+                <span class="section-tag">Hakkımızda</span>
+                <h2>Fikirlerinizi Somut Vizyona Dönüştürüyoruz</h2>
+                <p><strong>DGN Reklam Ajans</strong>, markaların reklam, iletişim ve tanıtım süreçlerinde ihtiyaç duyduğu tüm yaratıcı ve fiziksel materyalleri tek bir noktadan sunan profesyonel bir ajanstır.</p>
+                <p>Tasarım aşamasından kaliteli baskıya ve saha montaj/uygulamasına kadar her adımda yüksek standartlarda hizmet sunuyoruz. Markanızın gücüne güç katmak için yenilikçi teknolojiler ve özgün grafik tasarımlar ile yanınızdayız.</p>
+                <div class="badges">
+                    <div class="badge-item">
+                        <h3>%100</h3>
+                        <p>Müşteri Memnuniyeti</p>
+                    </div>
+                    <div class="badge-item">
+                        <h3>A'dan Z'ye</h3>
+                        <p>Bütünsel Çözüm</p>
+                    </div>
+                    <div class="badge-item">
+                        <h3>Zamanında</h3>
+                        <p>Teslimat & Montaj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="iletisim">
+        <div class="container contact-grid">
+            <div class="contact-info-card">
+                <h3>İletişim Bilgileri</h3>
+                <p style="color: var(--gray); margin-bottom: 30px;">Projeniz için hemen bizimle iletişime geçin, ücretsiz danışmanlık ve fiyat teklifi alın.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="contact-details">
+                        <h5>Yetkili</h5>
+                        <p>Doğan İşcan</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="contact-details">
+                        <h5>Telefon / WhatsApp</h5>
+                        <a href="tel:05309647666">0530 964 76 66</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-details">
+                        <h5>E-Posta</h5>
+                        <a href="mailto:dogan.iscan@gmail.com">dogan.iscan@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="contact-details">
+                        <h5>Instagram</h5>
+                        <a href="https://instagram.com/tabelan_burada" target="_blank">@tabelan_burada</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Hızlı Teklif İsteyin</h3>
+                <form action="#" method="post" onsubmit="alert('Mesajınız alındı! En kısa sürede dönüş yapacağız.'); return false;">
+                    <div class="form-group">
+                        <label>Adınız Soyadınız / Firma Adı</label>
+                        <input type="text" class="form-control" required placeholder="Örn: Ahmet Yılmaz">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon Numarası</label>
+                        <input type="tel" class="form-control" required placeholder="Örn: 0530 000 00 00">
+                    </div>
+                    <div class="form-group">
+                        <label>İlgilendiğiniz Hizmet</label>
+                        <select class="form-control">
+                            <option>Açık Hava Reklamları / Tabela</option>
+                            <option>Matbaa & Baskı Hizmetleri</option>
+                            <option>Promosyon Ürünleri</option>
+                            <option>Dijital Çözümler & Web Tasarım</option>
+                            <option>Logo & Kurumsal Kimlik Tasarımı</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Mesajınız / Detaylar</label>
+                        <textarea class="form-control" placeholder="Projeniz hakkında kısa bilgi verin..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; justify-content: center;">
+                        <i class="fa-solid fa-paper-plane"></i> Teklif Gönder
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <img src="dgn_logo_yatay.png" alt="DGN Reklam Ajans Logo">
+                <p>Tasarım, Baskı ve Uygulama alanlarında kaliteli ve hızlı hizmet anlayışı ile markanızın yanındayız.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Hızlı Bağlantılar</h4>
+                <ul>
+                    <li><a href="#anasayfa">Ana Sayfa</a></li>
+                    <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Hizmetlerimiz</h4>
+                <ul>
+                    <li><a href="#hizmetler">Açık Hava Reklamları</a></li>
+                    <li><a href="#hizmetler">Matbaa & Baskı</a></li>
+                    <li><a href="#hizmetler">Promosyon Ürünleri</a></li>
+                    <li><a href="#hizmetler">Dijital Çözümler</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>İletişim</h4>
+                <ul>
+                    <li><a href="tel:05309647666">0530 964 76 66</a></li>
+                    <li><a href="mailto:dogan.iscan@gmail.com">dogan.iscan@gmail.com</a></li>
+                    <li><a href="https://instagram.com/tabelan_burada" target="_blank">@tabelan_burada</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DGN Reklam Ajans - Doğan İşcan. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/905309647666?text=Merhaba,%20web%20sitenizden%20ulaşıyorum." target="_blank" class="whatsapp-float" title="WhatsApp ile İletişime Geçin">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
