@@ -11,31 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* Mobil Taşma Düzeltmeleri */
+/* Sayfanın taşmasını engelle */
 html, body {
-  width: 100% !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
 
+/* Logonun aşırı büyümesini engelle */
+header logo img, .logo img, header img {
+  max-width: 180px !important; /* Logonuzun orijinal boyutu */
+  height: auto !important;
+  display: block;
+}
+
+/* Mobil Görünüm Düzeltmeleri */
 @media screen and (max-width: 768px) {
-  header, .header-container, nav, .top-bar {
-    width: 100% !important;
+  /* Üst menü ve teklif butonunu ekrana sığdır */
+  .top-bar, header, nav {
+    box-sizing: border-box;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* Taşmaya sebep olan kartları/kolonları mobilde alt alta diz */
+  .hero, .about, .features, .grid, .row {
+    box-sizing: border-box;
     max-width: 100% !important;
+  }
+
+  /* Genişlikleri %100 yaparken taşmayı önleyen iç boşluk hesabı */
+  * {
     box-sizing: border-box !important;
   }
-
-  .grid, .features-grid, .stats-container, .row, .about-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
-  }
-
-  .grid > div, .features-grid > div, .card, .stat-card, .about-card {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-bottom: 15px !important;
-  }
+}
 
   img {
     max-width: 100% !important;
