@@ -637,6 +637,67 @@
                 display: none;
             }
         }
+        /* Genel Taşma Önleyici Temel Kurallar */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet ve Altı (992px) */
+@media (max-width: 992px) {
+    .about-grid, 
+    .contact-grid, 
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .nav-links {
+        display: none; /* Hamburger menü JavaScript ile eklenebilir */
+    }
+}
+
+/* Mobil Cihazlar (768px ve Altı) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Dar ekranlarda yan boşlukları optimize eder */
+    }
+
+    .hero {
+        padding: 60px 0 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px; /* Mobil ekranlar için ideal başlık boyutu */
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-btns {
+        flex-direction: column; /* Butonları alt alta dizer */
+        width: 100%;
+    }
+
+    .btn-primary, 
+    .btn-whatsapp {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .features-grid,
+    .services-grid {
+        grid-template-columns: 1fr; /* Izgaraları tek sütun yapar, taşmayı sıfırlar */
+    }
+
+    .badges {
+        flex-direction: column; /* Rozetleri mobilde alt alta getirir */
+    }
+}
     </style>
 </head>
 <body>
